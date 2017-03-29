@@ -148,7 +148,14 @@ $college = array(
 );
 
 echo '10.Les eleves du college : <br>';
-//ajoutez votre code ici
+foreach ($college as $classe => $eleves) {
+  foreach ($eleves as $key => $value) {
+    foreach ($value as $value) {
+      echo $value."<br>";
+    }
+    echo "<br>";
+  }
+}
 echo '<br><br>';
 
 //----------------------------------------
