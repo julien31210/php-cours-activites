@@ -226,7 +226,21 @@ $videotheque = array(
   );
 
 echo '12.Mes films : <br>';
-//ajoutez votre code ici
+foreach ($videotheque as $film) {
+  echo $film[name];
+  echo $film[date];
+  echo $film[realisateur];
+  foreach ($film[acteurs] as $acteur) {
+    echo $acteur;
+  }
+  // foreach ($film as $info) {
+  //   var_dump($info);
+  //   echo "<br>";
+  //   }echo "<br>";
+    // echo "<pre>";
+    // print_r($acteurs);
+    // echo "</pre>";
+  }
 echo '<br><br>';
 
 //----------------------------------------
