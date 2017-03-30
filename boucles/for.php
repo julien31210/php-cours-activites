@@ -5,7 +5,7 @@
 /*****************************************/
 echo '1.Nombre de mouton : <br>';
 for ($i = 0; $i <= 10; ++$i) {
-    echo $i.' mouton(s)<br>';
+  echo $i.' mouton(s)<br>';
 }
 echo '<br><br>';
 //----------------------------------------
@@ -14,7 +14,7 @@ $couleurs = ['rouge', 'bleu', 'vert', 'orange', 'marron', 'noir', 'blanc'];
 //count est une fonction proposée par php qui sert à compter le nombre d'éléments d'un tableau
 echo '2.Les couleurs : <br>';
 for ($i = 0; $i < count($couleurs); ++$i) {
-    echo $couleurs[$i].'<br>';
+  echo $couleurs[$i].'<br>';
 }
 echo '<br><br>';
 
@@ -23,7 +23,7 @@ echo '<br><br>';
 echo '3.Les couleurs depuis la fin: <br>';
 //n'oubliez pas qu'un tableau commence à l'index 0. C'est pour ça qu'on commence notre $i à la taille du tableau moins 1
 for ($i = count($couleurs) - 1; $i >= 0; --$i) {
-    echo $couleurs[$i].'<br>';
+  echo $couleurs[$i].'<br>';
 }
 echo '<br><br>';
 //----------------------------------------
@@ -34,13 +34,13 @@ $couleurs = array(
   array('vert clair', 'vert', 'vert fonce'),
   array('orange clair', 'orange', 'orange fonce'),
   array('marron clair', 'marron', 'marron fonce'),
-);
+  );
 
 echo '4.Les nuances de couleurs : <br>';
 for ($i = 0; $i < count($couleurs); ++$i) {
-    for ($j = 0; $j < count($couleurs[$i]); ++$j) {
-        echo $couleurs[$i][$j].'<br>';
-    }
+  for ($j = 0; $j < count($couleurs[$i]); ++$j) {
+    echo $couleurs[$i][$j].'<br>';
+  }
 }
 
 echo '<br><br>';
@@ -52,7 +52,7 @@ echo '<br><br>';
 $couleurs = ['rouge', 'bleu', 'vert', 'orange', 'marron', 'noir', 'blanc'];
 echo '5.Les couleurs : <br>';
 foreach ($couleurs as $couleur) {
-    echo $couleur.'<br>';
+  echo $couleur.'<br>';
 }
 echo '<br><br>';
 
@@ -64,11 +64,11 @@ $vehicule = array(
   'marque' => 'Lamborghini',
   'puissance' => 700,
   'prix' => 200000,
-);
+  );
 echo '6.Specificite de ma voiture : <br>';
 //syntax : foreach($tableau as $cle => $valeur )
 foreach ($vehicule as $propriete => $valeur) {
-    echo $propriete.':'.$valeur.'<br>';
+  echo $propriete.':'.$valeur.'<br>';
 }
 echo '<br><br>';
 
@@ -77,29 +77,29 @@ echo '<br><br>';
 $vehiculeConcession = array(
   'Bas de gamme' => array(
     'nom' => 'C1',
-       'marque' => 'Citroen',
-       'puissance' => 70,
-       'prix' => 10000,
-  ),
+    'marque' => 'Citroen',
+    'puissance' => 70,
+    'prix' => 10000,
+    ),
   'Milieu de gamme' => array(
     'nom' => 'Golf',
-       'marque' => 'VW',
-       'puissance' => 140,
-       'prix' => 270000,
-  ),
+    'marque' => 'VW',
+    'puissance' => 140,
+    'prix' => 270000,
+    ),
   'Haut de gamme' => array(
     'nom' => 'Aventador LP 700-4',
-       'marque' => 'Lamborghini',
-       'puissance' => 700,
-       'prix' => 200000,
-  ),
-);
+    'marque' => 'Lamborghini',
+    'puissance' => 700,
+    'prix' => 200000,
+    ),
+  );
 echo '7.Les voitures dans la concession :';
 foreach ($vehiculeConcession as $gamme => $vehicule) {
-    echo '<br>'.$gamme;
-    foreach ($vehicule as $propriete => $valeur) {
-        echo $propriete.' : '.$valeur.'<br>';
-    }
+  echo '<br>'.$gamme;
+  foreach ($vehicule as $propriete => $valeur) {
+    echo $propriete.' : '.$valeur.'<br>';
+  }
 }
 echo '<br><br>';
 
@@ -113,7 +113,7 @@ echo '<br><br>';
 echo "8.Les mois depuis le debut de l'annee : <br>";
 $mois = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
 for ($i = 0; $i <= 11; $i++) {
-    echo $mois[$i]." ";
+  echo $mois[$i]." ";
 }
 echo '<br><br>';
 
@@ -121,7 +121,7 @@ echo '<br><br>';
 //modifier et/ou remplacer les éléments ci-dessous
 echo "9.Les mois depuis la fin de l'annee : <br>";
 foreach (array_reverse ($mois) as $mois1) {
-    echo $mois1." ";
+  echo $mois1." ";
 }
 echo '<br><br>';
 //----------------------------------------
@@ -131,21 +131,28 @@ $college = array(
     array('Nom' => 'Payet', 'Prenom' => 'Mickael'),
     array('Nom' => 'Hoareau', 'Prenom' => 'Christine'),
     array('Nom' => 'Maillot', 'Prenom' => 'Laure'),
-  ),
+    ),
   'Cinquieme' => array(
     array('Nom' => 'Bourdon', 'Prenom' => 'Didier'),
     array('Nom' => 'Legitimus', 'Prenom' => 'Pascal'),
     array('Nom' => 'Campan', 'Prenom' => 'Bernard'),
     array('Nom' => 'Fois', 'Prenom' => 'Marina'),
     array('Nom' => 'Floresti', 'Prenom' => 'Florence'),
-  ),
+    ),
   'Quatrieme' => array(
     array('Nom' => 'Willis', 'Prenom' => 'Bruce'),
     array('Nom' => 'Lawrence', 'Prenom' => 'Laurence'),
     array('Nom' => 'Johannson', 'Prenom' => 'Scarlett'),
     array('Nom' => 'Jackson', 'Prenom' => 'Samuel'),
-  ),
-);
+    )
+  // ,
+  // 'Troisieme'=>array(
+  //   array('Nom' => 'Xavier', 'Prenom' => 'Charles'),
+  //   array('Nom' => 'Scott', 'Prenom' => 'Laurence'),
+  //   array('Nom' => 'Logan', 'Prenom' => 'Wolverine'),
+  //   array('Nom' => 'Diablo', 'Prenom' => 'Kirt'),
+  //   ),
+  );
 
 echo '10.Les eleves du college : <br>';
 foreach ($college as $classe => $eleves) {
@@ -162,7 +169,23 @@ echo '<br><br>';
 //Afficher le nom et prénoms des élèves de ce collège
 //reprenez le tableau ci-dessus, ajoutez des éléves pour la classe de troisième et réaffichez tout
 echo '11.Les eleves du college (avec les nouveaux arrivants): <br>';
-//ajoutez votre code ici
+$college['Troisieme'] = array(
+ array('Nom' => 'Xavier', 'Prenom' => 'Charles'),
+ array('Nom' => 'Scott', 'Prenom' => 'Laurence'),
+ array('Nom' => 'Logan', 'Prenom' => 'Wolverine'),
+ array('Nom' => 'Diablo', 'Prenom' => 'Kirt'),
+ );
+// echo "<pre>";
+// print_r($college);
+// echo "</pre>";
+foreach ($college as $classe => $eleves) {
+  foreach ($eleves as $key => $value) {
+    foreach ($value as $value) {
+      echo $value."<br>";
+    }
+    echo "<br>";
+  }
+}
 echo '<br><br>';
 
 //----------------------------------------
@@ -174,33 +197,33 @@ $videotheque = array(
     'realisateur' => 'Roland Emmerich',
     'acteurs' => array(
       'Will Smith', 'Bill Pullman', 'Jeff Goldblum', 'Mary McDonnell',
+      ),
     ),
-  ),
   array(
     'nom' => 'Bienvenue a Gattaca',
     'date' => 1998,
     'realisateur' => 'Andrew Niccol',
     'acteurs' => array(
       'Ethan Hawke', 'Uma Thurman', 'Jude Law',
+      ),
     ),
-  ),
   array(
     'nom' => 'Forrest Gump',
     'date' => 1994,
     'realisateur' => 'Robert Zemeckis',
     'acteurs' => array(
-      	'Tom Hanks', 'Gary Sinise',
+     'Tom Hanks', 'Gary Sinise',
+     ),
     ),
-  ),
   array(
     'nom' => '12 hommes en colere',
     'date' => 1957,
     'realisateur' => 'Sidney Lumet',
     'acteurs' => array(
-      	'Henry Fonda','Martin Balsam','John Fiedler','Lee J. Cobb','E.G. Marshall',
+     'Henry Fonda','Martin Balsam','John Fiedler','Lee J. Cobb','E.G. Marshall',
+     ),
     ),
-  ),
-);
+  );
 
 echo '12.Mes films : <br>';
 //ajoutez votre code ici
